@@ -1,10 +1,14 @@
-x=input()
-a=x.split()
+n=input()
+c=0
 s=[]
-c=[]
-for i in a:
-    s.append(i)
-for j in s:
-    c.append(len(j))
-print(max(c))
+for i in n:
+    if i==" ":
+        s.append(c)
+        c=0
+        continue
+    c+=1
+s.append(c)
+print(max(s))
+    
+
     
