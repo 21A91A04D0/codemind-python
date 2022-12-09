@@ -1,9 +1,9 @@
 s=input()
 a=s.replace(' ','')
-b=[]
-for i in a:
-    if i not in b and i.islower():
-        b.append(i)
-b.sort()
-f=''.join(b)
-print(f)
+d=list(a)
+d.sort()
+s1=''
+for i in d:
+    if i.islower() and d.count(i)==1:
+        s1+=i
+print(s1)
